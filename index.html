@@ -205,16 +205,20 @@
 </button>
 <button class="weight-btn border border-border-subtle hover:border-primary py-3 rounded-lg text-center transition-all group active:scale-95" onclick="updateWeight(5000, 380, this)">
 <span class="block font-bold text-on-surface">5kg</span>
-<span class="text-xs text-on-surface-variant">৳ 380</span>
+<span class="text-xs text-on-surface-variant">৳ 410</span>
 </button>
 </div>
 </div>
 <!-- Quantity -->
 <div class="flex items-center gap-6">
 <div class="flex items-center border border-border-subtle rounded-lg overflow-hidden">
-<button class="px-4 py-2 hover:bg-surface-container-low transition-colors"><span class="material-symbols-outlined text-lg">remove</span></button>
-<span class="px-4 py-2 font-bold border-x border-border-subtle">1</span>
-<button class="px-4 py-2 hover:bg-surface-container-low transition-colors"><span class="material-symbols-outlined text-lg">add</span></button>
+  <button class="px-4 py-2 hover:bg-surface-container-low transition-colors" onclick="changeWeight(-500)">
+    <span class="material-symbols-outlined text-lg">remove</span>
+  </button>
+  <span id="weightDisplay" class="px-4 py-2 font-bold border-x border-border-subtle">500g</span>
+  <button class="px-4 py-2 hover:bg-surface-container-low transition-colors" onclick="changeWeight(500)">
+    <span class="material-symbols-outlined text-lg">add</span>
+  </button>
 </div>
 <button class="flex-1 bg-secondary-container hover:bg-warning-orange text-on-secondary-container font-bold py-4 rounded-lg shadow-sm transition-all active:scale-95 flex justify-center items-center gap-2">
 <span class="material-symbols-outlined">shopping_basket</span> Add to Cart
@@ -474,5 +478,12 @@
             btn.querySelector('.text-xs').classList.add('text-primary/80');
             btn.querySelector('.text-xs').classList.remove('text-on-surface-variant');
         }
+         let weight = 500;
+
+  function changeWeight(amount) {
+    weight += amount;
+    if (weight < 500) weight = 500; // minimum 500g
+    document.getElementById('weightDisplay').textContent = weight + 'g';
+  }
     </script>
 </body></html>
