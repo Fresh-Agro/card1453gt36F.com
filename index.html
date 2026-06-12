@@ -120,9 +120,9 @@
 
 <header class="bg-surface border-b border-border-subtle shadow-sm sticky top-0 z-40 h-20 flex items-center">
     <nav class="flex justify-between items-center w-full px-margin-desktop max-w-container-max-width mx-auto">
-        <div class="font-headline-lg text-headline-lg font-bold text-primary">Fresh Agro</div>
+        <a class="font-headline-lg text-headline-lg font-bold text-primary" href="https://fresh-agro.github.io/.store.com">Fresh Agro</a>
         <div class="hidden md:flex items-center gap-8">
-            <a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#">Farms</a>
+            <a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="https://fresh-agro.github.io/.store.com">Farms</a>
             <a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#">Deals</a>
             <a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#">Seasonal</a>
             <a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#">Bulk</a>
@@ -158,7 +158,7 @@
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
         <div class="lg:col-span-6 space-y-4">
             <div class="bg-white border border-border-subtle rounded-xl overflow-hidden aspect-square flex items-center justify-center p-8">
-                <img id="main-product-img" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="#"/>
+                <img id="main-product-img" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://frugivore-bucket.s3.amazonaws.com/media/package/img_one/2021-02-24/Tomato.jpg"/>
             </div>
             <div class="grid grid-cols-4 gap-4">
                 <button class="border border-border-subtle rounded-lg overflow-hidden bg-white aspect-square opacity-60 hover:opacity-100 transition-opacity">
@@ -206,23 +206,6 @@
                     <button onclick="addToCartAndGo()" class="flex-1 bg-secondary-container hover:bg-warning-orange text-on-secondary-container font-bold py-4 rounded-lg shadow-sm transition-all active:scale-95 flex justify-center items-center gap-2">
                         <span class="material-symbols-outlined">shopping_basket</span> Add to Cart
                     </button>
-                </div>
-            </div>
-
-            <div class="grid grid-cols-2 gap-4">
-                <div class="flex items-start gap-3 p-4 bg-surface-container-low rounded-lg">
-                    <span class="material-symbols-outlined text-primary">local_shipping</span>
-                    <div>
-                        <p class="font-label-md text-on-surface">Express Delivery</p>
-                        <p class="text-xs text-on-surface-variant">Arrives in 60-90 mins</p>
-                    </div>
-                </div>
-                <div class="flex items-start gap-3 p-4 bg-surface-container-low rounded-lg">
-                    <span class="material-symbols-outlined text-primary">verified</span>
-                    <div>
-                        <p class="font-label-md text-on-surface">Freshness Guarantee</p>
-                        <p class="text-xs text-on-surface-variant">Sourced this morning</p>
-                    </div>
                 </div>
             </div>
         </div>
@@ -420,7 +403,7 @@ const productConfig = {
     title: "Tomato",
     category: "Vegetables",
     description: "A close-up shot of several bright red tomatoes resting on a clean, white surface. The lighting is soft and even, showcasing the vibrant red hue and smooth texture of the produce. This shot conveys a high-end, minimalist commercial feel, suitable for an e-commerce platform focused on quality and freshness.",
-    image: "https://images.unsplash.com/photo-1595855759920-86582396756a?q=80&w=600&auto=format&fit=crop", 
+    image: "https://frugivore-bucket.s3.amazonaws.com/media/package/img_one/2021-02-24/Tomato.jpg", 
     variants: [
         { label: "500g", price: 45 },
         { label: "1kg", price: 85 },
